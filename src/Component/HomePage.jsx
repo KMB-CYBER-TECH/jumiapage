@@ -5,7 +5,7 @@ import Widgets from "./Widgets";
 
 function HomePage() {
   return (
-    <div className="flex gap-6 p-6 bg-[url(/jum.jpg)] bg-cover bg-center">
+    <div className="flex gap-6 p-6  bg-cover bg-center">
       <Categories />
       <HeroBanner /> 
       <Widgets /> 

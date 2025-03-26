@@ -125,12 +125,12 @@ function Categories() {
   return (
     <div className="relative flex">
       {/* Sidebar */}
-      <div className="bg-white p-1 shadow-md rounded-md w-50 text-[14px]">
+      <div className="bg-white hover:rounded-r-none p-1 z-10 relative shadow-md h-[370px] rounded-md w-50 text-[14px]">
         <ul>
           {categories.map((category, index) => (
             <li
               key={index}
-              className="flex items-center p-3 hover:bg-orange-300 cursor-pointer"
+              className="flex items-center p-3 hover:bg-orange-300 cursor-pointer "
               onMouseEnter={() => setActiveCategory(category.name)}
               onMouseLeave={() => setActiveCategory(null)}
             >
@@ -144,7 +144,7 @@ function Categories() {
       {/* Full-Width Mega Dropdown */}
       {activeCategory && (
         <div
-          className="absolute top-0 left-56 w-[720px] h-[370px] bg-white shadow-lg p-4 border border-gray-200 rounded-md flex flex-col"
+          className="absolute left-50 w-[720px] h-[370px] z-20 bg-white shadow-lg p-4 border border-gray-200 rounded-md flex flex-col rounded-l-none"
           onMouseEnter={() => setActiveCategory(activeCategory)}
           onMouseLeave={() => setActiveCategory(null)}
         >
