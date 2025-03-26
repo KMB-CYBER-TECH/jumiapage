@@ -1,16 +1,20 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Categories from "./components/Categories";
-import Footer from "./components/Footer";
+import Hero from "./component/Hero";
+import Navbar from "./component/Navbar";
+import HomePage from "./component/HomePage";
+import ProductList from "./component/ProductList";
+import Footer from "./component/Footer";
+
+
 
 function App() {
   return (
-    <div>
-      <Navbar />
+    <div className="bg-blue-600">
       <Hero />
-      <Categories />
+      <Navbar />
+      <HomePage />
       <ProductList />
+      
       <Footer />
     </div>
   );
